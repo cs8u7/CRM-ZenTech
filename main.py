@@ -26,21 +26,7 @@ def mysql_connect():
 
          # Create a database
          database = "mkt_final"
-         create_db(cursor)
-
-         # Use the database and create a table
-         cursor.execute(f"USE {database}")
-         table_name = "my_table"
-         create_table_query = f"""
-         CREATE TABLE IF NOT EXISTS {table_name} (
-               id INT AUTO_INCREMENT PRIMARY KEY,
-               name VARCHAR(255) NOT NULL,
-               age INT NOT NULL,
-               created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-         )
-         """
-         cursor.execute(create_table_query)
-         print(f"Table '{table_name}' created or already exists.")
+         create_db(cursor, database)
 
    except mysql.connector.Error as err:
       print(f"Error: {err}")

@@ -1,4 +1,5 @@
 # MKT_CRM_DB
+![](image.jpg)
 
 ## Package install
 
@@ -18,7 +19,7 @@
 `sudo systemctl enable mysql.service`
 `sudo systemctl start mysql.service`
 
-## Project set up
+## Create sql user
 ```SQL
 CREATE USER 'popcorn'@'localhost' IDENTIFIED BY 'popcorn';
 GRANT ALL PRIVILEGES ON mkt_final.* TO 'popcorn'@'localhost';
