@@ -1,8 +1,6 @@
 import mysql.connector
 
-def create_db(cursor, database):
-   cursor.execute(f"CREATE DATABASE IF NOT EXISTS {database}")
-   print(f"Database '{database}' created or already exists.")
+from function.create_db import create_db, create_tables
    
 def mysql_connect():
    host = "localhost"
@@ -10,6 +8,7 @@ def mysql_connect():
    password = "popcorn"
 
    try:
+      # Connect to database
       connection = mysql.connector.connect(
          host=host,
          user=user,
@@ -21,12 +20,14 @@ def mysql_connect():
       if connection.is_connected():
          print(f"Connected to MySQL as {user}")
 
-         # Create and use the database
+         # Create cursor and define database
          cursor = connection.cursor()
+         database = "mkt_final"
 
          # Create a database
-         database = "mkt_final"
          create_db(cursor, database)
+         create_tables(cursor,'schema.sql',database)
+         
 
    except mysql.connector.Error as err:
       print(f"Error: {err}")
