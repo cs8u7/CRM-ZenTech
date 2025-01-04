@@ -1,96 +1,96 @@
-account_name,account_evenue,account_employees
-Acme Corporation,1100.04,2822
-Betasoloin,251.41,495
-Betatech,647.18,1185
-Bioholding,587.34,1356
-Bioplex,326.82,1016
-Blackzim,497.11,1588
-Bluth Company,1242.32,3027
-Bubba Gump,987.39,2253
-Cancity,718.62,2448
-Cheers,4269.9,6472
-Codehow,2714.9,2641
-Condax,4.54,9
-Conecom,1520.66,1806
-Dalttechnology,98.79,96
-dambase,2173.98,2928
-Domzoom,217.87,551
-Doncon,587.72,1501
-Donquadtech,1712.68,3194
-Dontechi,4618,10083
-Donware,1197.44,2570
-Fasehatice,4968.91,7523
-Faxquote,1825.82,5595
-Finhigh,1102.43,1759
-Finjob,2059.9,3644
-Funholding,2819.5,7227
-Ganjaflex,5158.71,17479
-Gekko & Co,2520.83,3502
-Genco Pura Olive Oil Company,894.33,1635
-Globex Corporation,1223.72,2497
-Gogozoom,86.68,187
-Golddex,52.5,165
-Goodsilron,2952.73,5107
-Green-Plus,692.19,1922
-Groovestreet,223.8,299
-Hatfan,792.46,1299
-Hottechi,8170.38,16499
-Initech,6395.05,20275
-Inity,2403.58,8801
-Isdom,3178.24,4540
-Iselectrics,527.11,1428
-J-Texon,1388.67,3583
-Kan-code,11698.03,34288
-Kinnamplus,702.72,1831
-Konex,7708.38,13756
-Konmatfix,375.43,1190
-Labdrill,2741.37,9226
-Lexiqvolax,1618.89,3889
-Massive Dynamic,665.06,1095
-Mathtouch,3027.46,9516
-Nam-zim,405.59,1179
-Newex,1012.72,3492
-Ontomedia,882.12,2769
-Opentech,355.23,853
-Plexzap,2437.85,4874
-Plusstrip,349.81,315
-Plussunin,1419.98,4018
-Rangreen,2938.67,8775
-Rantouch,1188.42,3015
-Ron-tech,3922.42,6837
-Rundofase,1008.06,1238
-Scotfind,6354.87,16780
-Scottech,45.39,100
-Silis,2818.38,6290
-Singletechno,2214.94,5374
-Sonron,1699.85,5108
-Stanredtax,1698.2,3798
-Statholdings,291.27,586
-Sterling Cooper,3814.15,10436
-Streethex,1376.8,1165
-Sumace,167.89,493
-Sunnamplex,894.37,1593
-The New York Inquirer,439.21,792
-Toughzap,332.43,799
-Treequote,5266.09,8595
-Umbrella Corporation,2022.14,5113
-Vehement Capital Partners,646.1,883
-Warephase,2041.73,5276
-Xx-holding,7537.24,20293
-Xx-zobam,3838.39,8274
-Y-corporation,2871.35,9561
-Yearin,2261.05,3851
-Zathunicon,71.12,144
-Zencorporation,40.79,142
-Zoomit,324.19,978
-Zotware,4478.47,13809
-Zumgoity,441.08,1210
-Dapper Baby Bumpers,0,37
-Go Go Espresso,0,221
-Revolution Spanners,0,145
-Time Out Electrical,0,67
-World Robots,0,32
-Toasters R Us,0,459
-Calamity Mixers,0,296
-AWOLEX,0,1031
-Temp Solutions,0,226
+account_id,account_name,account_evenue,account_employees,account_email,account_location_intl
+1,Acme Corporation,1100.04,2822,acme.corp@gmail.com,New York
+2,Betasoloin,251.41,495,info.betasoloin@gmail.com,Los Angeles
+3,Betatech,647.18,1185,betatech.info@gmail.com,Chicago
+4,Bioholding,587.34,1356,hello.bioholding@gmail.com,Houston
+5,Bioplex,326.82,1016,bioplexinfo@gmail.com,Phoenix
+6,Blackzim,497.11,1588,info.blackzim@gmail.com,San Diego
+7,Bluth Company,1242.32,3027,bluthco@gmail.com,Miami
+8,Bubba Gump,987.39,2253,info.bubbagump@gmail.com,Seattle
+9,Cancity,718.62,2448,cancitinfo@gmail.com,Boston
+10,Cheers,4269.9,6472,cheersocial@gmail.com,Atlanta
+11,Codehow,2714.9,2641,codehow.info@gmail.com,San Francisco
+12,Condax,4.54,9,condaxteam@gmail.com,Dallas
+13,Conecom,1520.66,1806,info.conecom@gmail.com,Denver
+14,Dalttechnology,98.79,96,dalttech.info@gmail.com,Las Vegas
+15,dambase,2173.98,2928,info.dambase@gmail.com,Orlando
+16,Domzoom,217.87,551,domzoom.info@gmail.com,Austin
+17,Doncon,587.72,1501,doncon.info@gmail.com,San Antonio
+18,Donquadtech,1712.68,3194,donquadtech.info@gmail.com,Detroit
+19,Dontechi,4618,10083,dontechi.info@gmail.com,Portland
+20,Donware,1197.44,2570,donware.info@gmail.com,Philadelphia
+21,Fasehatice,4968.91,7523,fasehatice@gmail.com,"Washington, D.C."
+22,Faxquote,1825.82,5595,faxquote.info@gmail.com,Nashville
+23,Finhigh,1102.43,1759,info.finhigh@gmail.com,Charlotte
+24,Finjob,2059.9,3644,finjob.info@gmail.com,Tampa
+25,Funholding,2819.5,7227,info.funholding@gmail.com,Salt Lake City
+26,Ganjaflex,5158.71,17479,info.ganjaflex@gmail.com,Kansas City
+27,Gekko & Co,2520.83,3502,info.gekkoco@gmail.com,Minneapolis
+28,Genco Pura Olive Oil Company,894.33,1635,genco.pura@gmail.com,New Orleans
+29,Globex Corporation,1223.72,2497,info.globex@gmail.com,Cleveland
+30,Gogozoom,86.68,187,info.gogozoom@gmail.com,Pittsburgh
+31,Golddex,52.5,165,golddex.info@gmail.com,Cincinnati
+32,Goodsilron,2952.73,5107,info.goodsilron@gmail.com,St. Louis
+33,Green-Plus,692.19,1922,greenplus.info@gmail.com,Indianapolis
+34,Groovestreet,223.8,299,groovestreet.info@gmail.com,Memphis
+35,Hatfan,792.46,1299,info.hatfan@gmail.com,Baltimore
+36,Hottechi,8170.38,16499,hottechi.info@gmail.com,Sacramento
+37,Initech,6395.05,20275,initech.inquiry@gmail.com,Columbus
+38,Inity,2403.58,8801,info.inity@gmail.com,Milwaukee
+39,Isdom,3178.24,4540,isdom.info@gmail.com,Raleigh
+40,Iselectrics,527.11,1428,info.iselectrics@gmail.com,Jacksonville
+41,J-Texon,1388.67,3583,jtexon.info@gmail.com,Louisville
+42,Kan-code,11698.03,34288,kan-code.info@gmail.com,Buffalo
+43,Kinnamplus,702.72,1831,info.kinnamplus@gmail.com,Richmond
+44,Konex,7708.38,13756,konex.info@gmail.com,Virginia Beach
+45,Konmatfix,375.43,1190,info.konmatfix@gmail.com,San Jose
+46,Labdrill,2741.37,9226,labdrill.info@gmail.com,Omaha
+47,Lexiqvolax,1618.89,3889,info.lexiqvolax@gmail.com,Birmingham
+48,Massive Dynamic,665.06,1095,mad.dynamic@gmail.com,Tulsa
+49,Mathtouch,3027.46,9516,mathtouch.info@gmail.com,Albuquerque
+50,Nam-zim,405.59,1179,nam-zim@example.com,Fresno
+51,Newex,1012.72,3492,newex@example.com,Fort Worth
+52,Ontomedia,882.12,2769,ontomedia@example.com,Mesa
+53,Opentech,355.23,853,opentech@example.com,Long Beach
+54,Plexzap,2437.85,4874,plexzap@example.com,Oakland
+55,Plusstrip,349.81,315,plusstrip@example.com,Arlington
+56,Plussunin,1419.98,4018,plussunin@example.com,Colorado Springs
+57,Rangreen,2938.67,8775,rangreen@example.com,Tucson
+58,Rantouch,1188.42,3015,rantouch@example.com,El Paso
+59,Ron-tech,3922.42,6837,ron-tech@example.com,Honolulu
+60,Rundofase,1008.06,1238,rundofase@example.com,Anchorage
+61,Scotfind,6354.87,16780,scotfind@example.com,Boise
+62,Scottech,45.39,100,scottech@example.com,Spokane
+63,Silis,2818.38,6290,silis@example.com,Chattanooga
+64,Singletechno,2214.94,5374,singletechno@example.com,Knoxville
+65,Sonron,1699.85,5108,sonron@example.com,Greensboro
+66,Stanredtax,1698.2,3798,stanredtax@example.com,Winston-Salem
+67,Statholdings,291.27,586,statholdings@example.com,Durham
+68,Sterling Cooper,3814.15,10436,sterlingcooper@example.com,Reno
+69,Streethex,1376.8,1165,streethex@example.com,Laredo
+70,Sumace,167.89,493,sumace@example.com,Little Rock
+71,Sunnamplex,894.37,1593,sunnamplex@example.com,Madison
+72,The New York Inquirer,439.21,792,thenewyorkinquirer@example.com,Mobile
+73,Toughzap,332.43,799,toughzap@example.com,Montgomery
+74,Treequote,5266.09,8595,treequote@example.com,Des Moines
+75,Umbrella Corporation,2022.14,5113,umbrellacorporation@example.com,Rochester
+76,Vehement Capital Partners,646.1,883,vehementcapitalpartners@example.com,Providence
+77,Warephase,2041.73,5276,warephase@example.com,Bridgeport
+78,Xx-holding,7537.24,20293,xx-holding@example.com,New Haven
+79,Xx-zobam,3838.39,8274,xx-zobam@example.com,Hartford
+80,Y-corporation,2871.35,9561,y-corporation@example.com,Albany
+81,Yearin,2261.05,3851,yearin@example.com,Syracuse
+82,Zathunicon,71.12,144,zathunicon@example.com,Springfield
+83,Zencorporation,40.79,142,zencorporation@example.com,Fort Lauderdale
+84,Zoomit,324.19,978,zoomit@example.com,Harrisburg
+85,Zotware,4478.47,13809,zotware@example.com,Scranton
+86,Zumgoity,441.08,1210,zumgoity@example.com,Allentown
+87,Dapper Baby Bumpers,0,37,dapperbabybumpers@example.com,Dayton
+88,Go Go Espresso,0,221,gogoespresso@example.com,Toledo
+89,Revolution Spanners,0,145,revolutionspanners@example.com,Akron
+90,Time Out Electrical,0,67,timeoutelectrical@example.com,Grand Rapids
+91,World Robots,0,32,worldrobots@example.com,Lexington
+92,Toasters R Us,0,459,toastersrus@example.com,Champaign
+93,Calamity Mixers,0,296,calamitymixers@example.com,Charleston
+94,AWOLEX,0,1031,awolex@example.com,Columbia
+95,Temp Solutions,0,226,tempsolutions@example.com,Savannah
