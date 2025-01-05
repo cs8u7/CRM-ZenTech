@@ -41,21 +41,21 @@ def insert_employee_table(connection):
             
             # Loop through each row
             for lines in csv_file:
-               employee_id = int(lines[0])
-               employee_name = lines[1]
-               employee_email = lines[2]
-               regional_office = lines[3]
-               employee_status = lines[4]
-               sales_team_id = lines[5]
+                employee_id = int(lines[0])
+                employee_name = lines[1]
+                employee_email = lines[2]
+                regional_office = lines[3]
+                employee_status = lines[4]
+                sales_team_id = lines[5]
                 
-               # Construct SQL Query
-               query = """
-               INSERT INTO employees (employee_id,employee_name,employee_email,regional_office,employee_status,sales_team_id)
-               VALUES (%s, %s, %s, %s, %s, %s)
-               """
+                # Construct SQL Query
+                query = """
+                INSERT INTO employees (employee_id,employee_name,employee_email,regional_office,employee_status,sales_team_id)
+                VALUES (%s, %s, %s, %s, %s, %s)
+                """
                 
-               cursor = connection.cursor() 
-               cursor.execute(query, (employee_id,employee_name,employee_email,regional_office,employee_status,sales_team_id))
+                cursor = connection.cursor() 
+                cursor.execute(query, (employee_id,employee_name,employee_email,regional_office,employee_status,sales_team_id))
         
         # Commit changes
         connection.commit()
@@ -73,18 +73,18 @@ def insert_products_table(connection):
             
             # Loop through each row
             for lines in csv_file:
-               product_id = int(lines[0])
-               product_name = lines[1]
-               product_sale_price = lines[2]
+                product_id = int(lines[0])
+                product_name = lines[1]
+                product_sale_price = lines[2]
                 
-               # Construct SQL Query
-               query = """
-               INSERT INTO products (product_id,product_name,product_sale_price)
-               VALUES (%s, %s, %s)
-               """
+                # Construct SQL Query
+                query = """
+                INSERT INTO products (product_id,product_name,product_sale_price)
+                VALUES (%s, %s, %s)
+                """
                 
-               cursor = connection.cursor() 
-               cursor.execute(query, (product_id,product_name,product_sale_price))
+                cursor = connection.cursor() 
+                cursor.execute(query, (product_id,product_name,product_sale_price))
         
         # Commit changes
         connection.commit()
@@ -92,6 +92,6 @@ def insert_products_table(connection):
         print(f"Error occurred products_table: {e}")
 
 def insert_data(connection):
-   insert_sales_teams_table(connection)
-   insert_employee_table(connection)
-   insert_products_table(connection)
+    insert_sales_teams_table(connection)
+    insert_employee_table(connection)
+    insert_products_table(connection)
