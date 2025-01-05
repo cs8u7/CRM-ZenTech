@@ -1,6 +1,7 @@
 import mysql.connector
 
 from function.create_db import create_db, create_tables
+from function.insert_data import insert_data
    
 def mysql_connect():
    host = "localhost"
@@ -27,6 +28,9 @@ def mysql_connect():
          # Create a database
          create_db(cursor, database)
          create_tables(cursor,'schema.sql',database)
+         
+         # Insert data to tables
+         insert_data(connection)
          
 
    except mysql.connector.Error as err:
