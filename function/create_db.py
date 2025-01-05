@@ -16,4 +16,3 @@ def create_tables(cursor, file_path, database):
     for command in commands:
         if command.strip():  # Skip empty commands
             cursor.execute(command)
-    print("Tables created")

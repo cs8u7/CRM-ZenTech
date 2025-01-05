@@ -34,7 +34,7 @@ def mysql_connect():
          
 
    except mysql.connector.Error as err:
-      print(f"Error: {err}")
+      print(f"Main Error: {err}")
 
    finally:
       if 'connection' in locals() and connection.is_connected():

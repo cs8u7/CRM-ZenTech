@@ -40,9 +40,7 @@ CREATE TABLE accounts (
     account_revenue DECIMAL(15, 2),
     account_employees INT,
     account_email VARCHAR(255),
-    sales_team_id INT,
-    account_location_intl VARCHAR(255),
-    FOREIGN KEY (sales_team_id) REFERENCES sales_teams(sales_team_id) ON DELETE SET NULL ON UPDATE CASCADE
+    account_location_intl VARCHAR(255)
 );
 
 -- Orders Table

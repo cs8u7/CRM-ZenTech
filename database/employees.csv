@@ -1,4 +1,4 @@
-employee_id,employee_name,employee_email,regional_Office,employee_status,sale _team_id
+employee_id,employee_name,employee_email,regional_office,employee_status,sales_team_id
 10001,Anna Snelling,anna.snelling@example.com,Central,Current,3
 10002,Cecily Lampkin,cecily.lampkin@example.com,Central,Current,5
 10003,Versie Hillebrand,versie.hillebrand@example.com,Central,Current,2
