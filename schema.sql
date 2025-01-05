@@ -18,19 +18,18 @@ CREATE TABLE sales_teams (
 -- Employees Table
 CREATE TABLE employees (
     employee_id INT PRIMARY KEY,
-    employee_name VARCHAR(255) NOT NULL,
+    employee_name VARCHAR(255) UNIQUE NOT NULL,
     employee_email VARCHAR(255) UNIQUE NOT NULL,
     regional_office VARCHAR(255),
     employee_status VARCHAR(50),
     sales_team_id INT,
-    FOREIGN KEY (manager_id) REFERENCES employees(employee_id) ON DELETE SET NULL ON UPDATE CASCADE,
     FOREIGN KEY (sales_team_id) REFERENCES sales_teams(sales_team_id) ON DELETE SET NULL ON UPDATE CASCADE
 );
 
 -- Products Table
 CREATE TABLE products (
     product_id INT PRIMARY KEY,
-    product_name VARCHAR(255) NOT NULL,
+    product_name VARCHAR(255) UNIQUE NOT NULL,
     product_sale_price DECIMAL(10, 2) NOT NULL
 );
 
@@ -52,7 +51,7 @@ CREATE TABLE orders (
     account_name VARCHAR(255) NOT NULL,
     product_name VARCHAR(255) NOT NULL,
     sale_agent_name VARCHAR(255) NOT NULL,
-    order_value DECIMAL(15, 2),
+    order_value INT,
     order_date DATE,
     FOREIGN KEY (account_name) REFERENCES accounts(account_name) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (product_name) REFERENCES products(product_name) ON DELETE CASCADE ON UPDATE CASCADE,
