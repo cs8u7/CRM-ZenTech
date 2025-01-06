@@ -154,6 +154,65 @@ def insert_orders_table(connection):
         connection.commit()
     except Exception as e:
         print(f"Error occurred orders_table: {e}")
+        
+def insert_tasks_table(connection):
+    try:
+        # Open the CSV file
+        with open('database/tasks.csv', 'r') as file:
+            csv_file = csv.reader(file, delimiter=',')  # Ensure delimiter is correct
+            
+            # Skip the header row
+            next(csv_file)
+            
+            # Loop through each row
+            for lines in csv_file:
+                task_id = lines[0]
+                task_description = lines[1]
+                task_completed = 1 if lines[2].strip().upper() == "TRUE" else 0
+                
+                # Construct SQL query (order_id is auto-generated)
+                query = """
+                INSERT INTO tasks (task_id,task_description,task_completed)
+                VALUES (%s, %s, %s)
+                """
+                
+                # Execute the query
+                cursor = connection.cursor()
+                cursor.execute(query, (task_id,task_description,task_completed))
+        
+        # Commit changes
+        connection.commit()
+    except Exception as e:
+        print(f"Error occurred tasks_table: {e}")
+        
+def insert_employees_tasks_table(connection):
+    try:
+        # Open the CSV file
+        with open('database/employees_tasks.csv', 'r') as file:
+            csv_file = csv.reader(file, delimiter=',')  # Ensure delimiter is correct
+            
+            # Skip the header row
+            next(csv_file)
+            
+            # Loop through each row
+            for lines in csv_file:
+                task_id = lines[0]
+                employee_id = lines[1]
+
+                # Construct SQL query (order_id is auto-generated)
+                query = """
+                INSERT INTO employees_tasks (task_id,employee_id)
+                VALUES (%s, %s)
+                """
+                
+                # Execute the query
+                cursor = connection.cursor()
+                cursor.execute(query, (task_id,employee_id))
+        
+        # Commit changes
+        connection.commit()
+    except Exception as e:
+        print(f"Error occurred employees_tasks_table: {e}")
 
 def insert_data(connection):
     insert_sales_teams_table(connection)
@@ -161,3 +220,5 @@ def insert_data(connection):
     insert_products_table(connection)
     insert_accounts_table(connection)
     insert_orders_table(connection)
+    insert_tasks_table(connection)
+    insert_employees_tasks_table(connection)

@@ -50,7 +50,7 @@ CREATE TABLE orders (
     product_name VARCHAR(255) NOT NULL,
     sale_agent_name VARCHAR(255) NOT NULL,
     order_value INT,
-    order_date DATE,
+    order_date VARCHAR(255) NOT NULL,
     FOREIGN KEY (account_name) REFERENCES accounts(account_name) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (product_name) REFERENCES products(product_name) ON DELETE CASCADE ON UPDATE CASCADE,
     FOREIGN KEY (sale_agent_name) REFERENCES employees(employee_name) ON DELETE CASCADE ON UPDATE CASCADE
@@ -60,7 +60,6 @@ CREATE TABLE orders (
 CREATE TABLE tasks (
     task_id INT PRIMARY KEY,
     task_description TEXT,
-    task_assigned_to VARCHAR(255) NOT NULL,
     task_completed BOOLEAN DEFAULT FALSE
 );
 
