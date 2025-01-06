@@ -1,4 +1,4 @@
-sales_agent_id,account,product,order_value,create_date
+sales_agent_name,account_name,product_name,order_value,create_date
 Boris Faz,Betasoloin,GTX Plus Basic,992,4/3/17
 Anna Snelling,dambase,GTX Plus Pro,5060,4/1/17
 Cassey Cress,Kan-code,GTX Basic,585,4/1/17

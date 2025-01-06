@@ -90,8 +90,74 @@ def insert_products_table(connection):
         connection.commit()
     except Exception as e:
         print(f"Error occurred products_table: {e}")
+        
+def insert_accounts_table(connection):
+    try:
+        # Open the CSV file
+        with open('database/accounts.csv', 'r') as file:
+            csv_file = csv.reader(file, delimiter=',')  # Ensure delimiter is correct
+            
+            # Skip the header row
+            next(csv_file)
+            
+            # Loop through each row
+            for lines in csv_file:
+                account_id = int(lines[0])
+                account_name = lines[1]
+                account_revenue = lines[2]
+                account_employees = lines[3]
+                account_email = lines[4]
+                account_location = lines[5]
+                
+                # Construct SQL Query
+                query = """
+                INSERT INTO accounts (account_id,account_name,account_revenue,account_employees,account_email,account_location)
+                VALUES (%s, %s, %s, %s, %s, %s)
+                """
+                
+                cursor = connection.cursor() 
+                cursor.execute(query, (account_id,account_name,account_revenue,account_employees,account_email,account_location))
+        
+        # Commit changes
+        connection.commit()
+    except Exception as e:
+        print(f"Error occurred accounts_table: {e}")
+        
+def insert_orders_table(connection):
+    try:
+        # Open the CSV file
+        with open('database/orders.csv', 'r') as file:
+            csv_file = csv.reader(file, delimiter=',')  # Ensure delimiter is correct
+            
+            # Skip the header row
+            next(csv_file)
+            
+            # Loop through each row
+            for lines in csv_file:
+                account_name = lines[1]
+                product_name = lines[2]
+                sale_agent_name = lines[0]
+                order_value = int(lines[3])
+                order_date = lines[4]
+                
+                # Construct SQL query (order_id is auto-generated)
+                query = """
+                INSERT INTO orders (account_name, product_name, sale_agent_name, order_value, order_date)
+                VALUES (%s, %s, %s, %s, %s)
+                """
+                
+                # Execute the query
+                cursor = connection.cursor()
+                cursor.execute(query, (account_name, product_name, sale_agent_name, order_value, order_date))
+        
+        # Commit changes
+        connection.commit()
+    except Exception as e:
+        print(f"Error occurred orders_table: {e}")
 
 def insert_data(connection):
     insert_sales_teams_table(connection)
     insert_employee_table(connection)
     insert_products_table(connection)
+    insert_accounts_table(connection)
+    insert_orders_table(connection)

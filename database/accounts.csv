@@ -1,4 +1,4 @@
-account_id,account_name,account_evenue,account_employees,account_email,account_location_intl
+account_id,account_name,account_revenue,account_employees,account_email,account_location
 1,Acme Corporation,1100.04,2822,acme.corp@gmail.com,New York
 2,Betasoloin,251.41,495,info.betasoloin@gmail.com,Los Angeles
 3,Betatech,647.18,1185,betatech.info@gmail.com,Chicago

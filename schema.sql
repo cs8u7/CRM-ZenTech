@@ -40,12 +40,12 @@ CREATE TABLE accounts (
     account_revenue DECIMAL(15, 2),
     account_employees INT,
     account_email VARCHAR(255),
-    account_location_intl VARCHAR(255)
+    account_location VARCHAR(255)
 );
 
 -- Orders Table
 CREATE TABLE orders (
-    order_id INT PRIMARY KEY,
+    order_id INT AUTO_INCREMENT PRIMARY KEY,
     account_name VARCHAR(255) NOT NULL,
     product_name VARCHAR(255) NOT NULL,
     sale_agent_name VARCHAR(255) NOT NULL,
