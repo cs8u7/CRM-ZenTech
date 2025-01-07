@@ -1,5 +1,5 @@
 # MKT_CRM_DB
-![](image.jpg)
+![](EDR.jpg)
 
 ## Package install
 

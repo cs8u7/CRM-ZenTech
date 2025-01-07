@@ -1,0 +1,64 @@
+// Use DBML to define your database structure
+// Docs: https://dbml.dbdiagram.io/docs
+
+Table sales_teams {
+  sales_team_id int [primary key]
+  manager varchar
+  regional_office varchar
+  manager_status varchar
+}
+
+Table employees {
+  employee_id int [primary key]
+  employee_name varchar [unique, not null]
+  employee_email varchar [unique, not null]
+  regional_office varchar
+  employee_status varchar
+  sales_team_id int
+}
+
+Table products {
+  product_id int [primary key]
+  product_name varchar [unique, not null]
+  product_sale_price decimal
+}
+
+Table accounts {
+  account_id int [primary key]
+  account_name varchar [unique, not null]
+  account_revenue decimal
+  account_employees int
+  account_email varchar
+  account_location varchar
+}
+
+Table orders {
+  order_id int [primary key, increment]
+  account_name varchar [not null]
+  product_name varchar [not null]
+  sale_agent_name varchar [not null]
+  order_value int
+  order_date varchar [not null]
+}
+
+Table tasks {
+  task_id int [primary key]
+  task_description text
+  task_completed boolean [default: false]
+}
+
+Table employees_tasks {
+  task_id int
+  employee_id int
+  indexes {
+    (task_id, employee_id) [unique]
+  }
+}
+
+// Relationships
+Ref: employees.sales_team_id > sales_teams.sales_team_id
+Ref: orders.account_name > accounts.account_name
+Ref: orders.product_name > products.product_name
+Ref: orders.sale_agent_name > employees.employee_name
+Ref: employees_tasks.task_id > tasks.task_id
+Ref: employees_tasks.employee_id > employees.employee_id
