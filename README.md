@@ -27,4 +27,4 @@ FLUSH PRIVILEGES;
 ```
 
 ## Source
-`github.com/adityashah0112/DBMS-CRM-demo/blob/main/orders.csv`
+`github.com/adityashah0112/DBMS-CRM-demo`
